@@ -1,0 +1,37 @@
+{
+  "name": "temporal-bank-statement-sync",
+  "version": "1.0.0",
+  "description": "Temporal workflow for continuous bank statement fetching and syncing to a destination API.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start:worker": "npm run build && ts-node dist/worker.js",
+    "start:client": "npm run build && ts-node dist/client.js",
+    "start:dev-worker": "ts-node src/worker.ts",
+    "start:dev-client": "ts-node src/client.ts"
+  },
+  "keywords": [
+    "temporal",
+    "workflow",
+    "nodejs",
+    "typescript",
+    "api-sync",
+    "pagination",
+    "bank-statements"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@temporalio/client": "^1.12.1",
+    "@temporalio/worker": "^1.12.1",
+    "@temporalio/workflow": "^1.12.1",
+    "axios": "^1.7.2",
+    "ms": "^3.0.0-canary.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}

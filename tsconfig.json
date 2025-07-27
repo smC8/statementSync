@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",                                  /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ES2021', 'ES2022', or 'ESNext'. */
+    "module": "CommonJS",                                /* Specify module code generation: 'None', 'CommonJS', 'AMD', 'System', 'UMD', 'ES6', 'ES2015', 'ES2020', 'ES2022', 'ESNext', 'Node16', 'NodeNext'. */
+    "moduleResolution": "Node",                          /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+    "outDir": "./dist",                                  /* Redirect output structure to the directory. */
+    "rootDir": "./src",                                  /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+  },
+  "include": [
+    "src/**/*.ts"                                        /* Include all TypeScript files in the 'src' directory. */
+  ],
+  "exclude": [
+    "node_modules",                                      /* Exclude node_modules from compilation. */
+    "dist"                                               /* Exclude the compiled output directory. */
+  ]
+}
